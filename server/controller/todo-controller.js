@@ -20,7 +20,7 @@ const addTodo = async (req, res) => {
 
 const getAllTodos = async (req, res) => {
     try {
-        const todos = await Todo.find({}).sort({ "crratedAT": -1 })
+        const todos = await Todo.find({}).sort({ "createdAT": -1 })
 
         return res.status(200).json(todos)
 
